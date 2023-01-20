@@ -32,17 +32,17 @@ export default function Header() {
         </Link>
 
         <div
-          className={`header__menu fixed left-0 w-full origin-top rounded-b-[2rem] bg-white px-16 pt-28 pb-10 text-center shadow-md transition-all duration-400 ${
+          className={`header__menu fixed left-0 w-full origin-top rounded-b-[2rem] bg-white px-16 pt-28 pb-10 text-center shadow-md transition-all duration-400 md:static md:flex md:w-auto md:items-center md:gap-8 md:rounded-none md:bg-transparent md:p-0 md:shadow-none ${
             menuOpen ? "top-0" : "-top-full"
           }`}
         >
           <img
             src={HeaderLight}
             alt="header light"
-            className="header__light absolute top-0 left-0 w-28 -rotate-[15deg]"
+            className="header__light absolute top-0 left-0 w-28 -rotate-[15deg] md:hidden"
           />
 
-          <ul className="header__list mb-6 flex flex-col gap-6">
+          <ul className="header__list mb-6 flex flex-col gap-6 md:mb-0 md:flex md:flex-row md:gap-8">
             {[
               ["About", "/about"],
               ["Celebrate", "/celebrate"],
@@ -50,7 +50,10 @@ export default function Header() {
               ["New", "/new"],
             ].map(([title, url]) => (
               <li key={url.toString()}>
-                <Link to={url} className="header__link">
+                <Link
+                  to={url}
+                  className="header__link text-[15px] font-medium text-gray-900 hover:text-red-500"
+                >
                   {title}
                 </Link>
               </li>
@@ -61,7 +64,7 @@ export default function Header() {
         </div>
 
         <div
-          className="header__toggle z-20 inline-flex cursor-pointer text-[1.3rem] text-gray-900"
+          className="header__toggle z-20 inline-flex cursor-pointer text-[1.3rem] text-gray-900 md:hidden"
           onClick={setHandleMenu}
         >
           {!menuOpen ? <RiMenu3Line /> : <RiCloseLine />}
