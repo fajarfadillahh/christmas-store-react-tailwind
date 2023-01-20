@@ -1,25 +1,29 @@
 const NewProducts = [
   {
     id: 1,
-    image: "http://localhost:5173/src/assets/images/new1.png",
+    image:
+      "https://christmas-landing-page-tailwind-vite.vercel.app/assets/new1.b489b381.png",
     price: "24.99",
     text: "Reindeer",
   },
   {
     id: 2,
-    image: "http://localhost:5173/src/assets/images/new2.png",
+    image:
+      "https://christmas-landing-page-tailwind-vite.vercel.app/assets/new2.0fbbc61a.png",
     price: "27.99",
     text: "Snow Globe",
   },
   {
     id: 3,
-    image: "http://localhost:5173/src/assets/images/new3.png",
+    image:
+      "https://christmas-landing-page-tailwind-vite.vercel.app/assets/new3.2fa5a3b1.png",
     price: "22.99",
     text: "Sledge",
   },
   {
     id: 4,
-    image: "http://localhost:5173/src/assets/images/new4.png",
+    image:
+      "https://christmas-landing-page-tailwind-vite.vercel.app/assets/new4.54a9f9bf.png",
     price: "18.99",
     text: "Chirstmas Wreath",
   },
