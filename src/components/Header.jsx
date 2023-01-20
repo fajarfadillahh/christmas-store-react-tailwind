@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
@@ -10,8 +10,14 @@ import HeaderLight from "../assets/images/header-light.png";
 import Button from "./Button";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const setHandleMenu = () => {
+    setMenuOpen((even) => !even);
+  };
+
   return (
-    <header className="header fixed top-0 left-0 z-20 w-full">
+    <header className="header fixed top-0 left-0 z-10 w-full">
       <div className="header__container container flex h-24 items-center justify-between">
         <Link
           to="/"
@@ -25,7 +31,11 @@ export default function Header() {
           Christmas
         </Link>
 
-        <div className="header__menu fixed top-24 left-0 w-full origin-top rounded-b-[2rem] bg-white py-8 px-16 text-center shadow-md transition-all duration-400">
+        <div
+          className={`header__menu fixed left-0 w-full origin-top rounded-b-[2rem] bg-white px-16 pt-28 pb-10 text-center shadow-md transition-all duration-400 ${
+            menuOpen ? "top-0" : "-top-full"
+          }`}
+        >
           <img
             src={HeaderLight}
             alt="header light"
@@ -50,8 +60,11 @@ export default function Header() {
           <Button url="/sign-up">Create account</Button>
         </div>
 
-        <div className="header__toggle inline-flex cursor-pointer text-[1.3rem] text-gray-900">
-          <RiMenu3Line />
+        <div
+          className="header__toggle z-20 inline-flex cursor-pointer text-[1.3rem] text-gray-900"
+          onClick={setHandleMenu}
+        >
+          {!menuOpen ? <RiMenu3Line /> : <RiCloseLine />}
         </div>
       </div>
     </header>
