@@ -8,8 +8,8 @@ import GivingImg3 from "../../assets/images/giving3.png";
 export default function Giving() {
   return (
     <section className="giving section">
-      <div className="giving__container container grid gap-12">
-        <div className="giving__data justify-self-center text-center">
+      <div className="giving__container container grid justify-items-center gap-12">
+        <div className="giving__data text-center">
           <h1 className="giving__title section-title">
             Start Giving This <br />
             Christmas
