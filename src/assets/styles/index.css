@@ -1,0 +1,8 @@
+/* ===== Global Import ===== */
+@import url("./_fonts.css");
+@import url("./_reusables.css");
+
+/* ===== Tailwind Directives ===== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

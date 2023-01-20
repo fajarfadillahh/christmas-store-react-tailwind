@@ -1,0 +1,20 @@
+@layer components {
+  /* section class */
+  .section {
+    @apply pt-32 pb-16;
+  }
+  .section-title {
+    @apply pb-4 text-[24px] font-semibold leading-title text-gray-900;
+  }
+  .section-text {
+    @apply text-[15px] leading-text text-gray-600;
+  }
+  .section-bottom {
+    @apply pb-8;
+  }
+
+  /* container class */
+  .container {
+    @apply mx-auto w-[calc(100%-3rem)] max-w-7xl;
+  }
+}
