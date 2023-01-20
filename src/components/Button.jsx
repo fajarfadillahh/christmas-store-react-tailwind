@@ -6,7 +6,7 @@ export default function Button({ url, children, className }) {
     <Link
       to={url}
       className={
-        `flex h-14 items-center justify-center rounded-full bg-red-600 py-4 px-8 text-[15px] font-semibold text-white hover:bg-red-500`.concat(
+        `flex h-14 items-center justify-center rounded-full bg-red-600 py-4 px-8 text-[15px] font-semibold capitalize text-white hover:bg-red-500`.concat(
           " "
         ) + className
       }
