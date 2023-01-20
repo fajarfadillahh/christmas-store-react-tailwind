@@ -16,7 +16,7 @@ export default function Giving() {
           </h1>
         </div>
 
-        <div className="giving__group grid grid-cols-[repeat(2,1fr)] gap-x-6 gap-y-10">
+        <div className="giving__group grid grid-cols-2 gap-x-6 gap-y-10">
           <div className="giving__content grid justify-items-center gap-2 text-center">
             <img
               src={GivingImg1}
