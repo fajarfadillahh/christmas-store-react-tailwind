@@ -17,7 +17,7 @@ export default function Header() {
   };
 
   return (
-    <header className="header fixed top-0 left-0 z-10 w-full">
+    <header className="header fixed top-0 left-0 z-10 w-full bg-white">
       <div className="header__container container flex h-24 items-center justify-between">
         <Link
           to="/"
