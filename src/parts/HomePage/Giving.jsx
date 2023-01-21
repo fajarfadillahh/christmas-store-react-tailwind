@@ -7,7 +7,7 @@ import GivingImg3 from "../../assets/images/giving3.png";
 
 export default function Giving() {
   return (
-    <section className="giving section">
+    <section className="giving section dark:bg-gray-900">
       <div className="giving__container container grid justify-items-center gap-12">
         <div className="giving__data text-center">
           <h1 className="giving__title section-title">
@@ -25,7 +25,7 @@ export default function Giving() {
             />
 
             <div>
-              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900 lg:text-[20px]">
+              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900 dark:text-white lg:text-[20px]">
                 Surprise gifts
               </h3>
               <p className="giving__content-text section-text">
@@ -42,7 +42,7 @@ export default function Giving() {
             />
 
             <div>
-              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900 lg:text-[20px]">
+              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900 dark:text-white lg:text-[20px]">
                 Ornaments
               </h3>
               <p className="giving__content-text section-text">
@@ -59,7 +59,7 @@ export default function Giving() {
             />
 
             <div>
-              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900 lg:text-[20px]">
+              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900 dark:text-white lg:text-[20px]">
                 Lots of love
               </h3>
               <p className="giving__content-text section-text">
