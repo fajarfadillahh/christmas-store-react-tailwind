@@ -14,8 +14,8 @@ import ScrollToTop from "../components/ScrollToTop";
 export default function Home() {
   return (
     <>
+      <Header />
       <div className="overflow-hidden">
-        <Header />
         <Hero />
         <Giving />
         <Celebrate />
@@ -23,8 +23,8 @@ export default function Home() {
         <New />
         <Message />
         <Footer />
-        <ScrollToTop />
       </div>
+      <ScrollToTop />
     </>
   );
 }
