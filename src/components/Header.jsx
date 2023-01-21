@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
@@ -10,14 +10,37 @@ import HeaderLight from "../assets/images/header-light.png";
 import Button from "./Button";
 
 export default function Header() {
+  // toggle menu
   const [menuOpen, setMenuOpen] = useState(false);
 
   const setHandleMenu = () => {
     setMenuOpen((even) => !even);
   };
 
+  // add shadow when scrolling
+  const [headerShadow, setHeaderShadow] = useState(false);
+
+  useEffect(() => {
+    const addHeaderShadow = () => {
+      if (window.scrollY >= 20) {
+        setHeaderShadow(true);
+      } else {
+        setHeaderShadow(false);
+      }
+    };
+    window.addEventListener("scroll", addHeaderShadow);
+
+    return () => {
+      window.removeEventListener("scroll", addHeaderShadow);
+    };
+  }, []);
+
   return (
-    <header className="header fixed top-0 left-0 z-10 w-full bg-white">
+    <header
+      className={`header fixed top-0 left-0 z-10 w-full bg-white transition-all duration-400 ${
+        headerShadow ? "shadow-md" : "shadow-none"
+      }`}
+    >
       <div className="header__container container flex h-24 items-center justify-between">
         <Link
           to="/"
