@@ -8,17 +8,21 @@ import Celebrate from "../parts/HomePage/Celebrate";
 import Gift from "../parts/HomePage/Gift";
 import New from "../parts/HomePage/New";
 import Message from "../components/Message";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Giving />
-      <Celebrate />
-      <Gift />
-      <New />
-      <Message />
+      <div className="overflow-hidden">
+        <Header />
+        <Hero />
+        <Giving />
+        <Celebrate />
+        <Gift />
+        <New />
+        <Message />
+        <Footer />
+      </div>
     </>
   );
 }
