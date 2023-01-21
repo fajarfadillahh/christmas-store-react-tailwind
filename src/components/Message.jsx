@@ -8,8 +8,8 @@ import MessageImg from "../assets/images/message.png";
 
 export default function Message() {
   return (
-    <section className="message section">
-      <div className="message__container container rounded-3xl bg-red-600 py-16 px-8 lg:py-28 xl:max-w-5xl xl:py-32">
+    <section className="message section dark:bg-gray-900">
+      <div className="message__container container rounded-3xl bg-red-600 py-16 px-8 dark:bg-gray-800 lg:py-28 xl:max-w-5xl xl:py-32">
         <div className="message__wrapper grid gap-12 xs:mx-auto xs:max-w-sm lg:max-w-3xl lg:grid-cols-2 lg:items-center">
           <div>
             <h1 className="message__title section-title text-center text-white">
