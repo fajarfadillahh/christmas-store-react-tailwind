@@ -3,7 +3,7 @@ import { RiHeartLine } from "react-icons/ri";
 
 export default function Card({ image, price, text }) {
   return (
-    <div className="gift__card group relative grid gap-2 rounded-xl bg-white p-6 shadow-[0_4px_8px_rgba(0,0,0,0.07)] transition-all duration-400 hover:shadow-[0_4px_8px_rgba(0,0,0,0.12)] xl:p-8">
+    <div className="gift__card group relative grid gap-2 rounded-xl bg-white p-6 shadow-[0_4px_8px_rgba(0,0,0,0.07)] transition-all duration-400 hover:shadow-[0_4px_8px_rgba(0,0,0,0.12)] dark:bg-gray-800 xl:p-8">
       <img
         src={image}
         alt="gift img"
@@ -11,7 +11,7 @@ export default function Card({ image, price, text }) {
       />
 
       <div>
-        <h3 className="gift__card-title pb-1 text-[18px] font-semibold text-gray-900 lg:text-[20px]">
+        <h3 className="gift__card-title pb-1 text-[18px] font-semibold text-gray-900 dark:text-white lg:text-[20px]">
           ${price}
         </h3>
         <p className="gift__card-text section-text text-[12px] lg:text-[15px]">
