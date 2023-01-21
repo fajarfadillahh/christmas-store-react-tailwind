@@ -16,16 +16,16 @@ export default function Giving() {
           </h1>
         </div>
 
-        <div className="giving__group grid grid-cols-2 gap-x-6 gap-y-10">
+        <div className="giving__group grid grid-cols-2 gap-x-6 gap-y-10 xs:max-w-sm md:max-w-xl md:grid-cols-3 lg:max-w-2xl lg:gap-x-12">
           <div className="giving__content grid justify-items-center gap-2 text-center">
             <img
               src={GivingImg1}
               alt="giving img"
-              className="giving__content-img w-28"
+              className="giving__content-img w-28 md:w-32 lg:w-36"
             />
 
             <div>
-              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900">
+              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900 lg:text-[20px]">
                 Surprise gifts
               </h3>
               <p className="giving__content-text section-text">
@@ -38,11 +38,11 @@ export default function Giving() {
             <img
               src={GivingImg2}
               alt="giving img"
-              className="giving__content-img w-28"
+              className="giving__content-img w-28 md:w-32 lg:w-36"
             />
 
             <div>
-              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900">
+              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900 lg:text-[20px]">
                 Ornaments
               </h3>
               <p className="giving__content-text section-text">
@@ -55,11 +55,11 @@ export default function Giving() {
             <img
               src={GivingImg3}
               alt="giving img"
-              className="giving__content-img w-28"
+              className="giving__content-img w-28 md:w-32 lg:w-36"
             />
 
             <div>
-              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900">
+              <h3 className="giving__content-title pb-2 text-[18px] font-semibold text-gray-900 lg:text-[20px]">
                 Lots of love
               </h3>
               <p className="giving__content-text section-text">

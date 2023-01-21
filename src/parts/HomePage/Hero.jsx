@@ -21,7 +21,7 @@ export default function Hero() {
             Merry Christmas and <br />
             Happy New Year!
           </h1>
-          <p className="hero__text section-text section-bottom sm:max-w-[350px]">
+          <p className="hero__text section-text section-bottom sm:max-w-[350px] xl:max-w-[300px]">
             Christmas and a new year is about to begin, all good wishes and
             successes.
           </p>
