@@ -9,6 +9,7 @@ import Gift from "../parts/HomePage/Gift";
 import New from "../parts/HomePage/New";
 import Message from "../components/Message";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <New />
         <Message />
         <Footer />
+        <ScrollToTop />
       </div>
     </>
   );
