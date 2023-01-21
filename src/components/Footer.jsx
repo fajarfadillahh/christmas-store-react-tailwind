@@ -10,7 +10,7 @@ import FooterImg2 from "../assets/images/footer2.png";
 
 export default function Footer() {
   return (
-    <footer className="footer relative pt-32 pb-8 dark:bg-gray-900">
+    <footer className="footer relative pt-32 pb-8 transition-all duration-400 dark:bg-gray-900">
       <div className="footer__container container grid gap-24 xl:max-w-5xl">
         <div className="footer__group grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-12 lg:justify-items-center xl:grid-cols-4">
           <div className="footer__content">

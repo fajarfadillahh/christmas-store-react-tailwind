@@ -7,7 +7,7 @@ import GivingImg3 from "../../assets/images/giving3.png";
 
 export default function Giving() {
   return (
-    <section className="giving section dark:bg-gray-900">
+    <section className="giving section transition-all duration-400 dark:bg-gray-900">
       <div className="giving__container container grid justify-items-center gap-12">
         <div className="giving__data text-center">
           <h1 className="giving__title section-title">

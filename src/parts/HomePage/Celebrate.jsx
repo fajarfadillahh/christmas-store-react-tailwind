@@ -8,7 +8,7 @@ import Button from "../../components/Button";
 
 export default function Celebrate() {
   return (
-    <section className="celebrate section dark:bg-gray-900">
+    <section className="celebrate section transition-all duration-400 dark:bg-gray-900">
       <div className="celebrate__container container grid justify-items-center gap-12 lg:grid-cols-2 lg:items-center xl:max-w-5xl">
         <div className="celebrate__data text-center xs:max-w-sm sm:max-w-md lg:max-w-full lg:text-left">
           <h1 className="celebrate__title section-title xl:text-[42px]">

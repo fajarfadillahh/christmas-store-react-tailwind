@@ -8,7 +8,7 @@ import GiftCard from "../../components/Card";
 
 export default function Gift() {
   return (
-    <section className="gift section dark:bg-gray-900">
+    <section className="gift section transition-all duration-400 dark:bg-gray-900">
       <div className="gift__container container grid justify-items-center gap-12">
         <div className="gift__data text-center">
           <h1 className="gift__title section-title">

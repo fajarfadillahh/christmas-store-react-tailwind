@@ -4,7 +4,6 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
 // import images
 import HeaderLogo from "../assets/images/logo.png";
-import HeaderLight from "../assets/images/header-light.png";
 
 // import color mode
 import useColorMode from "../hooks/useColorMode";

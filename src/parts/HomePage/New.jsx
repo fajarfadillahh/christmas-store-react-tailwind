@@ -7,10 +7,10 @@ import NewCard from "../../components/Card";
 
 export default function New() {
   return (
-    <section className="new section dark:bg-gray-900">
+    <section className="new section transition-all duration-400 dark:bg-gray-900">
       <div className="new__container container grid justify-items-center gap-12">
         <div className="new__data text-center">
-          <h1 className="new__title section-title">New Products Gifts</h1>
+          <h1 className="new__title section-title">New Product Gifts</h1>
         </div>
 
         <div className="new__group grid grid-cols-2 gap-6 md:grid-cols-3 lg:gap-x-12 lg:gap-y-8">
