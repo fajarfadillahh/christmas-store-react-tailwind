@@ -11,8 +11,8 @@ import FooterImg2 from "../assets/images/footer2.png";
 export default function Footer() {
   return (
     <footer className="footer relative pt-32 pb-8">
-      <div className="footer__container container grid gap-24">
-        <div className="footer__group grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-12">
+      <div className="footer__container container grid gap-24 xl:max-w-5xl">
+        <div className="footer__group grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-12 lg:justify-items-center xl:grid-cols-4">
           <div className="footer__content">
             <div className="footer__content-logo mb-3 inline-flex items-center gap-2 text-[18px] font-semibold text-gray-900">
               <img
@@ -110,12 +110,12 @@ export default function Footer() {
       <img
         src={FooterImg1}
         alt="footer img"
-        className="footer__img-1 absolute top-1/4 right-8 w-28"
+        className="footer__img-1 absolute top-1/4 right-8 w-28 lg:left-20 lg:top-[55%] lg:w-36"
       />
       <img
         src={FooterImg2}
         alt="footer img"
-        className="footer__img-2 absolute top-[70%] -right-12 w-28"
+        className="footer__img-2 absolute top-[70%] -right-12 w-28 lg:top-[30%] lg:w-36 xl:right-0"
       />
     </footer>
   );
