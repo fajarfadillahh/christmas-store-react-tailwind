@@ -1,0 +1,9 @@
+/* ::section */
+::selection {
+  @apply bg-red-600 text-white;
+}
+
+/* ::-webkit-scrollbar */
+::-webkit-scrollbar {
+  @apply hidden;
+}
