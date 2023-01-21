@@ -8,8 +8,8 @@ import NewCard from "../../components/Card";
 export default function New() {
   return (
     <section className="new section">
-      <div className="new__container container grid gap-12">
-        <div className="new__data justify-self-center text-center">
+      <div className="new__container container grid justify-items-center gap-12">
+        <div className="new__data text-center">
           <h1 className="new__title section-title">New Products Gifts</h1>
         </div>
 
