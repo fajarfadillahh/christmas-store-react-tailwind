@@ -10,11 +10,11 @@ import FooterImg2 from "../assets/images/footer2.png";
 
 export default function Footer() {
   return (
-    <footer className="footer relative pt-32 pb-8">
+    <footer className="footer relative pt-32 pb-8 dark:bg-gray-900">
       <div className="footer__container container grid gap-24 xl:max-w-5xl">
         <div className="footer__group grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-12 lg:justify-items-center xl:grid-cols-4">
           <div className="footer__content">
-            <div className="footer__content-logo mb-3 inline-flex items-center gap-2 text-[18px] font-semibold text-gray-900">
+            <div className="footer__content-logo mb-3 inline-flex items-center gap-2 text-[18px] font-semibold text-gray-900 dark:text-white">
               <img
                 src={FooterIcon}
                 alt="footer logo"
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title mb-5 text-[17px] font-semibold text-gray-900">
+            <h3 className="footer__content-title mb-5 text-[17px] font-semibold text-gray-900 dark:text-white">
               Our Services
             </h3>
 
@@ -41,7 +41,7 @@ export default function Footer() {
                 <li key={url.toString()}>
                   <Link
                     to={url}
-                    className="footer__content-link text-[15px] text-gray-600 hover:text-red-600 hover:underline"
+                    className="footer__content-link text-[15px] text-gray-600 hover:text-red-600 hover:underline dark:text-white dark:hover:text-red-600"
                   >
                     {title}
                   </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title mb-5 text-[17px] font-semibold text-gray-900">
+            <h3 className="footer__content-title mb-5 text-[17px] font-semibold text-gray-900 dark:text-white">
               Support
             </h3>
 
@@ -64,7 +64,7 @@ export default function Footer() {
                 <li key={url.toString()}>
                   <Link
                     to={url}
-                    className="footer__content-link text-[15px] text-gray-600 hover:text-red-600 hover:underline"
+                    className="footer__content-link text-[15px] text-gray-600 hover:text-red-600 hover:underline dark:text-white dark:hover:text-red-600"
                   >
                     {title}
                   </Link>
@@ -74,7 +74,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__content">
-            <h3 className="footer__content-title mb-5 text-[17px] font-semibold text-gray-900">
+            <h3 className="footer__content-title mb-5 text-[17px] font-semibold text-gray-900 dark:text-white">
               Available On
             </h3>
 
@@ -101,7 +101,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="footer__copyrights border-t border-gray-300 pt-8 text-center text-[15px] text-gray-600">
+        <p className="footer__copyrights border-t border-gray-300 pt-8 text-center text-[15px] text-gray-600 dark:text-white">
           © Copyrights 2023 Christmas. All rigths reserved | Develop by Fajar
           Fadillah A ❤️
         </p>
