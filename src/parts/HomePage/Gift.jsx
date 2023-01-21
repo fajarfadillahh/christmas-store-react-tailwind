@@ -4,7 +4,7 @@ import React from "react";
 import DataProducts from "../../api/Products";
 
 // import components
-import GiftCard from "../../components/GiftCard";
+import GiftCard from "../../components/Card";
 
 export default function Gift() {
   return (

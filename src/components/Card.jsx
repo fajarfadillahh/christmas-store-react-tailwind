@@ -1,7 +1,7 @@
 import React from "react";
 import { RiHeartLine } from "react-icons/ri";
 
-export default function GiftCard({ image, price, text }) {
+export default function Card({ image, price, text }) {
   return (
     <div className="gift__card group relative grid gap-2 rounded-xl bg-white p-6 shadow-[0_4px_8px_rgba(0,0,0,0.07)] transition-all duration-400 hover:shadow-[0_4px_8px_rgba(0,0,0,0.12)]">
       <img
