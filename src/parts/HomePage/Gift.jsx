@@ -17,7 +17,7 @@ export default function Gift() {
           </h1>
         </div>
 
-        <div className="gift__group grid grid-cols-2 gap-6">
+        <div className="gift__group grid grid-cols-2 gap-6 md:grid-cols-3 lg:gap-x-12 lg:gap-y-8">
           {DataProducts.map((item) => (
             <GiftCard
               key={item.id}
