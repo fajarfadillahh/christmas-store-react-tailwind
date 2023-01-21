@@ -8,7 +8,7 @@ import Button from "../../components/Button";
 
 export default function Hero() {
   return (
-    <section className="hero section">
+    <section className="hero section dark:bg-gray-900">
       <div className="hero__container container grid justify-items-center gap-12 lg:grid-cols-2 lg:items-center xl:max-w-5xl">
         <img
           src={HeroImg}

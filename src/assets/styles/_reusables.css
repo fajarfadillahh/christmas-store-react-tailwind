@@ -4,10 +4,10 @@
     @apply pt-32 pb-16;
   }
   .section-title {
-    @apply pb-4 text-[24px] font-semibold capitalize leading-title text-gray-900 lg:text-[36px];
+    @apply pb-4 text-[24px] font-semibold capitalize leading-title text-gray-900 dark:text-white lg:text-[36px];
   }
   .section-text {
-    @apply text-[15px] leading-text text-gray-600;
+    @apply text-[15px] leading-text text-gray-600 dark:text-white;
   }
   .section-bottom {
     @apply pb-8;
