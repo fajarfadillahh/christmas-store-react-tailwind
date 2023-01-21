@@ -7,6 +7,7 @@ import Giving from "../parts/HomePage/Giving";
 import Celebrate from "../parts/HomePage/Celebrate";
 import Gift from "../parts/HomePage/Gift";
 import New from "../parts/HomePage/New";
+import Message from "../components/Message";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Celebrate />
       <Gift />
       <New />
+      <Message />
     </>
   );
 }
