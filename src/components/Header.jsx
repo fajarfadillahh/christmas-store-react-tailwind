@@ -6,6 +6,9 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import HeaderLogo from "../assets/images/logo.png";
 import HeaderLight from "../assets/images/header-light.png";
 
+// import color mode
+import useColorMode from "../hooks/useColorMode";
+
 // import components
 import Button from "./Button";
 
@@ -35,16 +38,19 @@ export default function Header() {
     };
   }, []);
 
+  // set dark mode
+  const [colorMode, setColorMode] = useColorMode();
+
   return (
     <header
-      className={`header fixed top-0 left-0 z-10 w-full bg-white transition-all duration-400 ${
+      className={`header fixed top-0 left-0 z-10 w-full bg-white transition-all duration-400 dark:bg-gray-900 ${
         headerShadow ? "shadow-md" : "shadow-none"
       }`}
     >
       <div className="header__container container flex h-24 items-center justify-between">
         <Link
           to="/"
-          className="header__logo inline-flex items-center gap-2 text-[18px] font-semibold text-gray-900"
+          className="header__logo inline-flex items-center gap-2 text-[18px] font-semibold text-gray-900 dark:text-white"
         >
           <img
             src={HeaderLogo}
@@ -55,7 +61,7 @@ export default function Header() {
         </Link>
 
         <div
-          className={`header__menu fixed left-0 w-full origin-top rounded-b-[2rem] bg-white px-16 pt-28 pb-10 text-center shadow-md transition-all duration-400 md:static md:flex md:w-auto md:items-center md:gap-8 md:rounded-none md:bg-transparent md:p-0 md:shadow-none ${
+          className={`header__menu fixed left-0 w-full origin-top rounded-b-[2rem] bg-white px-16 pt-28 pb-10 text-center shadow-md transition-all duration-400 dark:bg-gray-900 md:static md:top-0 md:flex md:w-auto md:items-center md:gap-8 md:rounded-none md:bg-transparent md:p-0 md:shadow-none ${
             menuOpen ? "top-0" : "-top-full"
           }`}
         >
@@ -75,7 +81,7 @@ export default function Header() {
               <li key={url.toString()}>
                 <Link
                   to={url}
-                  className="header__link text-[15px] font-medium text-gray-900 hover:text-red-500"
+                  className="header__link text-[15px] font-medium text-gray-900 hover:text-red-500 dark:text-white dark:hover:text-red-500"
                 >
                   {title}
                 </Link>
@@ -83,11 +89,21 @@ export default function Header() {
             ))}
           </ul>
 
+          {/* theme toggle */}
+          <div
+            className="header__theme absolute right-16 top-24 cursor-pointer text-[1.5rem] md:top-28 md:right-24 lg:static"
+            onClick={() => {
+              setColorMode(colorMode === "light" ? "dark" : "light");
+            }}
+          >
+            {colorMode === "light" ? "🌙" : "☀️"}
+          </div>
+
           <Button url="/sign-up">Create account</Button>
         </div>
 
         <div
-          className="header__toggle z-20 inline-flex cursor-pointer text-[1.3rem] text-gray-900 md:hidden"
+          className="header__toggle z-20 inline-flex cursor-pointer text-[1.3rem] text-gray-900 dark:text-white md:hidden"
           onClick={setHandleMenu}
         >
           {!menuOpen ? <RiMenu3Line /> : <RiCloseLine />}
