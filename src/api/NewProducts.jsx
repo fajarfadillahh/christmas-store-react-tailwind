@@ -27,6 +27,13 @@ const NewProducts = [
     price: "18.99",
     text: "Chirstmas Wreath",
   },
+  {
+    id: 5,
+    image:
+      "https://christmas-landing-page-tailwind-vite.vercel.app/assets/giving2.e66854db.png",
+    price: "10.99",
+    text: "Ornaments Bell",
+  },
 ];
 
 export default NewProducts;

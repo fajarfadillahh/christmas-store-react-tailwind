@@ -6,6 +6,7 @@ import Hero from "../parts/HomePage/Hero";
 import Giving from "../parts/HomePage/Giving";
 import Celebrate from "../parts/HomePage/Celebrate";
 import Gift from "../parts/HomePage/Gift";
+import New from "../parts/HomePage/New";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Giving />
       <Celebrate />
       <Gift />
+      <New />
     </>
   );
 }
