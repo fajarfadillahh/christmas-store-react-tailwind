@@ -61,17 +61,11 @@ export default function Header() {
         </Link>
 
         <div
-          className={`header__menu fixed left-0 w-full origin-top rounded-b-[2rem] bg-white px-16 pt-28 pb-10 text-center shadow-md transition-all duration-400 dark:bg-gray-900 md:static md:top-0 md:flex md:w-auto md:items-center md:gap-8 md:rounded-none md:bg-transparent md:p-0 md:shadow-none ${
-            menuOpen ? "top-0" : "-top-full"
+          className={`header__menu fixed top-24 left-0 w-full origin-top bg-white py-8 px-16 text-center shadow-md transition-all duration-400 dark:bg-gray-900 md:static md:top-0 md:flex md:w-auto md:scale-y-100 md:items-center md:gap-6 md:p-0 md:shadow-none lg:gap-8 ${
+            menuOpen ? "scale-y-100" : "scale-y-0"
           }`}
         >
-          <img
-            src={HeaderLight}
-            alt="header light"
-            className="header__light absolute top-0 left-0 w-28 -rotate-[15deg] md:hidden"
-          />
-
-          <ul className="header__list mb-6 flex flex-col gap-6 md:mb-0 md:flex md:flex-row md:gap-8">
+          <ul className="header__list mb-6 flex flex-col gap-6 md:mb-0 md:flex md:flex-row lg:gap-8">
             {[
               ["About", "/about"],
               ["Celebrate", "/celebrate"],
@@ -89,9 +83,9 @@ export default function Header() {
             ))}
           </ul>
 
-          {/* theme toggle */}
+          {/* theme toggle [desktop version] */}
           <div
-            className="header__theme absolute right-16 top-24 cursor-pointer text-[1.5rem] md:top-28 md:right-24 lg:static"
+            className="header__theme hidden md:absolute md:-bottom-16 md:right-8 md:inline-flex md:cursor-pointer md:text-[1.3rem] lg:static"
             onClick={() => {
               setColorMode(colorMode === "light" ? "dark" : "light");
             }}
@@ -102,11 +96,23 @@ export default function Header() {
           <Button url="/sign-up">Create account</Button>
         </div>
 
-        <div
-          className="header__toggle z-20 inline-flex cursor-pointer text-[1.3rem] text-gray-900 dark:text-white md:hidden"
-          onClick={setHandleMenu}
-        >
-          {!menuOpen ? <RiMenu3Line /> : <RiCloseLine />}
+        <div className="header__wrapper flex items-center gap-8 md:hidden">
+          {/* theme toggle [mobile version] */}
+          <div
+            className="header__theme text-[1.3rem]"
+            onClick={() => {
+              setColorMode(colorMode === "light" ? "dark" : "light");
+            }}
+          >
+            {colorMode === "light" ? "🌙" : "☀️"}
+          </div>
+
+          <div
+            className="header__toggle z-20 inline-flex cursor-pointer text-[1.3rem] text-gray-900 dark:text-white"
+            onClick={setHandleMenu}
+          >
+            {!menuOpen ? <RiMenu3Line /> : <RiCloseLine />}
+          </div>
         </div>
       </div>
     </header>
