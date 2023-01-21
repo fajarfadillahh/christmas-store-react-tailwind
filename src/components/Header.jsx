@@ -70,7 +70,7 @@ export default function Header() {
               ["About", "/about"],
               ["Celebrate", "/celebrate"],
               ["Gifts", "/gifts"],
-              ["New", "/new"],
+              ["New Products", "/new-products"],
             ].map(([title, url]) => (
               <li key={url.toString()}>
                 <Link
